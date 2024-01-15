@@ -1,0 +1,429 @@
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+.container-options {
+    width: 100%;
+    height: calc(100% - 77px);
+}
+
+.form-options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-button__option {
+    width: 300px;
+    height: 300px;
+    transform: translateY(-15%);
+}
+
+.container-button__option p {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.container-button__option button {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #E4A42E;
+    font-family: inherit;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container-button__option button:hover {
+    background-color: #79540F;
+    transform: scale(1.1);
+}
+
+.container-icon__button {
+    width: 75%;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+    .form-options {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        row-gap: 20px;
+    }
+
+    .container-button__option button {
+        width: 220px;
+        height: 100%;
+        font-size: 1.3em;
+    }
+
+    .container-button__option:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .container-button__option {
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+        display: flex;
+        justify-content: center;
+        transform: translateY(0);
+    }
+
+    .container-button__option:first-child {
+        justify-content: end;
+        transform: translateX(-10%);
+    }
+
+    .container-button__option:nth-child(2) {
+        justify-content: start;
+        transform: translateX(10%);
+    }
+
+    .container-title__cash h2 {
+        margin-bottom: 30px;
+    }
+}
+
+/* ESTILOS PARA LA VISTA DE LAS VENTAS DEL DÍA / REPORTE DE BOLETAS */
+.container-main {
+    position: relative;
+}
+
+.container-btn__back {
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-back {
+    width: fit-content;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background-color: #FFFFFF;
+    color: #79540F;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.btn-back i {
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.btn-back:hover {
+    color: #E4A42E;
+}
+
+.container-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-table__receipts {
+    width: 80%;
+    height: fit-content;
+    max-height: 320px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.table-receipts {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.table-receipts i {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    font-size: 0.9em;
+    background-color: #FFFFFF;
+}
+
+.table-receipts i:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
+}
+
+.table-receipts th {
+    background-color: #DCDCDC;
+    padding: 10px 0;
+}
+
+.table-receipts tr:nth-child(odd) {
+    background-color: #76A5AF;
+}
+
+.table-receipts tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.table-receipts tr td {
+    padding: 10px 0;
+}
+
+.btn-view-receipt:hover i {
+    color: #0078D7;
+}
+
+.btn-view-complaint i {
+    background-color: transparent;
+}
+
+.btn-view-complaint:hover i {
+    color: #F92B59;
+}
+
+.container-sales__info {
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.container-receipts__number {
+    width: 50%;
+    padding-left: 10px;
+    text-align: start;
+}
+
+.container-total__sales {
+    width: 50%;
+    padding-right: 10px;
+    text-align: end;
+}
+
+.btn-report-receipts {
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    background-color: #855dff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #23008b;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ESTILOS PARA EL FORMULARIO DE REPORTE DE CAJA */
+.container-form__cash {
+    width: 100%;
+    height: 280px;
+}
+
+.form-report__cash {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-data__column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-column, .second-column {
+    justify-content: space-between;
+}
+
+.label-form {
+    width: 75px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.input-form {
+    width: 50px;
+    height: 25px;
+    margin-left: 80px;
+    text-align: end;
+    font-family: inherit;
+    font-size: 1.2em;
+}
+
+.container-data {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-total__receipts {
+    margin-top: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 80%;
+    transform: translateX(-68%);
+}
+
+.container-total__receipts p {
+    width: 80px;
+    margin: 0;
+}
+
+.input-amount {
+    width: 80px;
+    height: 25px;
+    margin-left: 10px;
+    text-align: end;
+    font-family: inherit;
+    font-size: 1.2em;
+}
+
+.container-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-report-cash {
+    width: 150px;
+    height: 30px;
+    margin-top: 100px;
+    background-color: #855dff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #23008b;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ESTILOS PARA EL FORMULARIO DE CIERRE DE CAJA */
+.container-title__tally h2 {
+    margin-bottom: 30px;
+}
+
+.container-form__tally {
+    width: 75%;
+    height: 400px;
+    max-height: 420px;
+} 
+
+.form-report__tally {
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+}
+
+.form-report__tally .container-data__column {
+    height: 100%;
+}
+
+.form-report__tally .container-data {
+    width: 60%;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.container-data textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+}
+
+.form-report__tally label {
+    width: 100%;
+    color: #79540f;
+}
+
+.form-report__tally input {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.container-report__info {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-view-report {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+}
+
+.btn-view-report:hover i {
+    color: #0078D7;
+}
+
+.btn-report-tally {
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    background-color: #855dff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #23008b;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.view {
+    width: 200px;
+    height: 45px;
+    background-color: #0078D7;
+    border-color: #003561;
+}

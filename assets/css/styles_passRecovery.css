@@ -1,0 +1,52 @@
+.form-header {
+    width: 100%;
+    height: max(100px, 30%);
+    display: flex;
+}
+
+.return-icon {
+    width: 0;
+    height: 0;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    color: #735929;
+    cursor: pointer;
+}
+
+/* Necesario ya que está dentro de un span */
+.container-logo {
+    height: 100%;
+}
+
+.container-form {
+    width: 100%;
+    height: max(calc(100% - 200px), 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.form-login {
+    height: 70%;
+}
+
+.container-data {
+    padding-top: 30px;
+}
+
+.btn-accept {
+    width: 50%;
+    height: 30px;
+    margin-top: 30px;
+    background-color: #FFB938;
+    border-radius: 8px;
+    border: 1.5px solid;
+    border-color: #976C1C;
+    font-size: 0.9em;
+    font-weight:bolder;
+    color: #735929;
+    cursor: pointer;
+}

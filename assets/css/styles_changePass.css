@@ -1,0 +1,21 @@
+.container-form {
+    width: 100%;
+    height: max(130px, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.btn-accept {
+    width: 50%;
+    height: 30px;
+    background-color: #FFB938;
+    border-radius: 8px;
+    border: 1.5px solid;
+    border-color: #976C1C;
+    font-size: 0.9em;
+    font-weight:bolder;
+    color: #735929;
+    cursor: pointer;
+}
